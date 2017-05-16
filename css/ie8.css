@@ -3,11 +3,12 @@ body {
 }
 /*版面*/
 
+
+/*不吃透明*/
 .armycard{
     background:#fff \9; /*IE6、IE7、IE8\*/
 }
-
+/*float使用時要給width*/
 .navbar-nav {
-    float: right;
-    margin-top: 27px;
+	width: 580px;
 }
