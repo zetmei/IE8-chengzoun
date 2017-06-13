@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5,p{
 .navbar:before{
     position: absolute;
     width: 100%;
-    height: 6px;
+    height: 6px;f
     content: '';
     background-color: #333435;
     bottom: -6px;
@@ -189,15 +189,19 @@ ul.navber-signin li a:hover{
 /* 區塊 */
 .armyblock{
     /* background-color: #fff; */
-    height: 280px;/* 暫時 */
     padding-right: 5px;
     padding-left: 5px;
     margin-bottom: 10px;
 }
 .armycard{
     background-color: rgba(255, 255, 255, 0.7);
-    height: 280px;
-    margin-bottom: 20px;
+    /* height: 280px; */
+    margin-bottom: 10px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.armycard.large{
+    min-height: 600px;
 }
 .armycard h3{
     margin-top: 0;
@@ -267,7 +271,14 @@ ul.navber-signin li a:hover{
     background-color: #e3e2ea;
     padding: 5px 8px;
 }
-.armycard.schedule i{
+.armycard.schedule p.content{
+    position: relative;
+    padding-left: 28px;
+}
+.armycard.schedule p i{
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 0 8px 0 0;
     color: #888383;
     font-size: 20px;
@@ -372,6 +383,9 @@ ul.navber-signin li a:hover{
     .armyblock{
         width: 50%;
         float: left;
+    }
+    .armycard.large {
+        min-height: auto;
     }
 }
 @media screen and (max-width: 992px) {
