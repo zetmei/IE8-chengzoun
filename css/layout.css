@@ -150,6 +150,9 @@ ul.navber-signin li a:hover{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.37);
 }
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
 .blockwarp{
      position: absolute;
     top: 190px;
